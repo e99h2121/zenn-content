@@ -45,6 +45,11 @@ published: true # 公開設定（falseにすると下書き）
 
 [gitlab/issue_templates/onboarding.md · main · GitLab.com / people-group / People Operations / Employment Templates · GitLab](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md)
 
+オンボーディング ではないがこれは本気に作り込まれていて楽しい。
+
+https://www.publickey1.jp/blog/22/awsawsaws_cloud_quest.html
+
+
 
 ## バッジ制度
 

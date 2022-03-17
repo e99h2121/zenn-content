@@ -8,7 +8,7 @@ published: true # 公開設定（falseにすると下書き）
 
 [色々な会社・エンジニアのまとめ of まとめ - Qiita](https://qiita.com/e99h2121/items/8773ef78613ab8214dfc) に学んで研修のカリキュラムの方式をああだこうだ相談している。以下前回まとめ。
 
-https://zenn.dev/e99h2121/articles/onbording-quest-articles
+https://zenn.dev/e99h2121/articles/onboarding-quest-articles
 
 続いて記事色々。
 
