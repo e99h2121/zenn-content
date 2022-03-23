@@ -49,6 +49,9 @@ published: true # 公開設定（falseにすると下書き）
 
 https://www.publickey1.jp/blog/22/awsawsaws_cloud_quest.html
 
+[2021年新卒入社エンジニアによる当時のオンボーディングのふりかえり - Chatwork Creator's Note](https://creators-note.chatwork.com/entry/2022/03/23/161514)
+
+[過去一最高のオンボーディングを受けた話](https://zenn.dev/stafes/articles/joined-stafes)
 
 
 ## バッジ制度

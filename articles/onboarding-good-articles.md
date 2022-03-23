@@ -29,6 +29,10 @@ https://zenn.dev/e99h2121/articles/onboarding-quest-articles
 [エンジニアは数学をどこまで勉強すればよいのか - 「プログラマの数学」を薦めたい - Qiita](https://qiita.com/e99h2121/items/fb8f04637cc420c7e1f6)
 [Effective Java[第3版] 学習のまとめ - Qiita](https://qiita.com/uminchu-1173/items/609ce2f3de2ff2f698c1)
 
+## 問い合わせ
+
+[パフォーマンスチューニングの目的と流れを書いてみた - Qiita](https://qiita.com/tbtakhk/items/ecf1bc502333d2bdab52)
+
 ## でも先輩諸氏はこうやって仕事を楽しくしている
 
 [レガシーな大規模システムの修正でレビュー時に大切にしていること - Qiita](https://qiita.com/shmstm/items/dc42de3ba00bb4fc552d)
