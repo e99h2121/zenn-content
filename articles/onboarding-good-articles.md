@@ -58,6 +58,7 @@ https://zenn.dev/e99h2121/articles/onboarding-quest-articles
 
 [子育てしながらGitHubに草を1年間生やし続けたら人生が豊かになった話 - Qiita](https://qiita.com/mizo_k/items/c2aba14e77f5fc6f7483)
 [なぜ WHI では times 文化がうまくまわっているのか？ - Qiita](https://qiita.com/satomihoya/items/b125e1eaf44c4a643e6e)
+[times やってたらデブサミ登壇できた話 - Qiita](https://qiita.com/satomihoya/items/27b0386ce9ffb25f2fd3)
 [Best Qiita賞の裏側 ～プライズ提供プロジェクトにおける工夫と、プロジェクトの中で得た学び～ - Qiita](https://qiita.com/cold-wisteria/items/be3ec7f417a199a619cd)
 [弊社名を文法解析してみた(できるとは言ってない) - Qiita](https://qiita.com/h4ya5e/items/5e0da18718d6aa45165c)
 [その技術記事、価値あります - Qiita](https://qiita.com/kabik/items/53655f8fc81c7844f055)
