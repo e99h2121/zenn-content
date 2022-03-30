@@ -12,19 +12,26 @@ https://zenn.dev/e99h2121/articles/onboarding-quest-articles
 
 記事色々。
 
-## 便利なツール
+## 記事達
+### 便利なツール
 
 [新人さんにすすめる有益なツール達 2022春 - Qiita](https://qiita.com/e99h2121/items/f70db44e7f69901f0141)
 
-## マネージャがメンバーに知ってほしいこと
+### マネージャがメンバーに知ってほしいこと
 
 [開発マネージャがメンバーに知って欲しい事 ※随時更新 - Qiita](https://qiita.com/goamix/items/247e0c086dc39d6f1102)
 
-## 一方配属後半年でキャッチアップしてきたこと
+### 仮説思考
+
+[情報を生み出す考え方～経験主義と仮説思考・システム思考～ - Qiita](https://qiita.com/flyaway/items/67f5577390bc7bf02eb1)
+[仮説を検証するために、小さなコードを書いて結果を確かめよう - Qiita](https://qiita.com/flyaway/items/9910cecc1ac8ed2f1b75)
+
+
+### 一方配属後半年でキャッチアップしてきたこと
 
 [配属後半年で確立されてきたCatch-upのスタイルに関して - Qiita](https://qiita.com/ogishima_h/items/9c5f518da6577ecd1e45)
 
-## 地道なお勉強
+### 地道なお勉強
 
 [頑張らない技術のキャッチアップ方法 - Qiita](https://qiita.com/uenok0108/items/0ae631b0011e3e962667)
 [営業時に頻出するIT用語集 - Qiita](https://qiita.com/e99h2121/items/0feba4bf8dbb31c26b6e)
@@ -32,11 +39,11 @@ https://zenn.dev/e99h2121/articles/onboarding-quest-articles
 [エンジニアは数学をどこまで勉強すればよいのか - 「プログラマの数学」を薦めたい - Qiita](https://qiita.com/e99h2121/items/fb8f04637cc420c7e1f6)
 [Effective Java[第3版] 学習のまとめ - Qiita](https://qiita.com/uminchu-1173/items/609ce2f3de2ff2f698c1)
 
-## 問い合わせ
+### 顧客問い合わせ
 
 [パフォーマンスチューニングの目的と流れを書いてみた - Qiita](https://qiita.com/tbtakhk/items/ecf1bc502333d2bdab52)
 
-## でも先輩諸氏はこうやって仕事を楽しくしている
+### しかし先輩諸氏はこうやって仕事を楽しくしている
 
 [レガシーな大規模システムの修正でレビュー時に大切にしていること - Qiita](https://qiita.com/shmstm/items/dc42de3ba00bb4fc552d)
 [大規模業務アプリケーションの秘伝のソースコードを継ぎ足していく2つのコツ - Qiita](https://qiita.com/noriyasu_hirata/items/d72e778c67af5e04a047)
@@ -45,19 +52,18 @@ https://zenn.dev/e99h2121/articles/onboarding-quest-articles
 [マニュアルレボリューション〜楽しく書ける製品マニュアルを目指して〜 - Qiita](https://qiita.com/autotaker1984/items/cfde031f6ae80830499c)
 [なぜ開発チームは私の起票した要望をなかなか実装してくれないの？への苦悩 - Qiita](https://qiita.com/e99h2121/items/f4c5856734d136f672b7)
 
-## 機能をお客様に届ける醍醐味
+### 機能をお客様に届ける醍醐味
 
 [良い製品企画書の書き方とは？ - Qiita](https://qiita.com/flyaway/items/2769e66acd0f92c07f4b)
 [アジャイル初心者だけど、どうしてもインセプションデッキの素晴らしさを伝えたい話 - Qiita](https://qiita.com/bigchopstick-3412/items/47972d7ab8bce54b8fb5)
 
-## こんな読み物
+### こんな読み物
 
 [不思議の国のSE用語 - Qiita](https://qiita.com/t_nakayama0714/items/478a8ed3a9ae143ad854)
 [【新人プログラマ応援】開発タスクをアサインされたらどういう手順で進めるべきか - Qiita](https://qiita.com/jnchito/items/017487cd882091494298)
 [【新人教育】新人エンジニアに意識してほしい15個のこと - Qiita](https://qiita.com/shinkai_/items/63986290e987621a1188)
 
-
-## 色んな人がいる
+### 色んな人がいる
 
 [子育てしながらGitHubに草を1年間生やし続けたら人生が豊かになった話 - Qiita](https://qiita.com/mizo_k/items/c2aba14e77f5fc6f7483)
 [なぜ WHI では times 文化がうまくまわっているのか？ - Qiita](https://qiita.com/satomihoya/items/b125e1eaf44c4a643e6e)
@@ -70,13 +76,14 @@ and more
 
 https://qiita.com/advent-calendar/2021/advent-works-hi
 
-
-## メンターも試行錯誤して頑張っているのだよ
+### メンターも試行錯誤して頑張っているのだよ
 
 [メンターLv.2のお仕事 - Qiita](https://qiita.com/seino-ta/items/d12454f7b8afa746ff7c)
 [新入社員が来てメンターになれって言われたけど、どうすればいいのかという対話テクニック - Qiita](https://qiita.com/hirokidaichi/items/2e8e731acfd7b6c7e02f)
 [ペアプログラミングして気がついた新人プログラマの成長を阻害する悪習 - Qiita](https://qiita.com/hirokidaichi/items/27c757d92b6915e8ecf7)
 
-きみのはいぞくをまってるぜ！
 
+## 以上
+
+きみのはいぞくをまってるぜ！
 Coming soon...
