@@ -10,8 +10,11 @@ published: true # 公開設定（falseにすると下書き）
 
 https://zenn.dev/e99h2121/articles/onboarding-quest-articles
 
-続いて記事色々。
+記事色々。
 
+## 便利なツール
+
+[新人さんにすすめる有益なツール達 2022春 - Qiita](https://qiita.com/e99h2121/items/f70db44e7f69901f0141)
 
 ## マネージャがメンバーに知ってほしいこと
 
