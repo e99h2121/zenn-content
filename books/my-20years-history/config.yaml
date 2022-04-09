@@ -5,3 +5,4 @@ published: true # falseだと下書き
 price: 200 # 有料の場合200〜5000
 chapters:
   - my-20years-history-1 # チャプター1
+  - my-20years-history-2 # チャプター2
