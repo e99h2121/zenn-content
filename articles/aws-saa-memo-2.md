@@ -1,0 +1,471 @@
+---
+title: "AWS SAA なぐり書き (2)" # 記事のタイトル
+emoji: "📝" # アイキャッチとして使われる絵文字（1文字だけ）
+type: "tech" # tech: 技術記事 / idea: アイデア記事
+topics: ["初心者", "saa"] # タグ。["markdown", "rust", "aws"]のように指定する
+published: true # 公開設定（falseにすると下書き）
+---
+
+[AWS学習事始め - 基礎資料読んだリスト～Cloud Practitioner合格まで（2022.02） - Qiita](https://qiita.com/e99h2121/items/bec62a16c1264baf6a5e) の続編。追記中。
+試験ガイドとサンプル:
+
+https://aws.amazon.com/jp/certification/certified-solutions-architect-associate/
+
+【2022年版】これだけでOK！ AWS 認定ソリューションアーキテクト – アソシエイト試験突破講座
+
+https://www.udemy.com/course/aws-associate/
+
+
+- 環境の自動化
+- セキュリティ
+- コスト最適化
+- 運用上の優秀性
+- 模擬試験
+
+- AWSのアカウント登録
+    - AWSマネジメントコンソールへ
+- AWSでサーバーを構築してみる
+    - オンプレ → EC2
+        - インスタンスタイプの選択
+        - インスタンスの詳細の設定
+        - ストレージ
+        - タグ
+        - セキュリティグループ
+        - インスタンス作成の確認
+        - キーペア
+    - 操作
+        - SSH (TeraTerm)
+        - ec2-user
+        - *.pem
+    - マネジメントコンソールから接続
+    - EC2の削除
+
+- アーキテクトアソシエイト
+    - SysOpsアドミニストレーター
+    - ソリューションデベロッパー
+
+- 顧客要件に基づいてアーキテクチャ設計減速を使ったソリューションを定義
+- ライフサイクル全体を通じて、ベストプラクティスに基づいた実装
+
+- AWSサービスの適切な設定方法
+- トラブル解消方法
+- 最適なアーキテクチャ構成
+
+- レジリエントアーキテクチャの設計 (信頼性の高いアーキテクチャ)
+    - 多層アーキテクチャ
+        - セキュリティグループでトラフィックを制御する
+    - 可用性の高いアーキテクチャ
+        - ロードバランサーが、障害が発生したインスタンスへのリクエストの送信を停止する
+    - デカップリングメカニズムの設計
+        - キューの受信メッセージ待機時間を延長する
+    - 適切な回復力のあるストレージ
+        - キャッシュ型ボリュームモードで設定されたAWS Storage Gatewayのボリューム型ゲートウェイをデプロイする
+- 高パフォーマンスアーキテクチャ 
+    - ワークロードに対する伸縮自在でスケーラブルなコンピューティング
+        - EC2インスタンスにELBとAuto Scalingグループを設定する
+    - パフォーマンスとスケーラブルなストレージソリューション
+        - EFS でEC2インスタンスが同時にファイルシステムにアクセスしてデータを共有できる
+    - ワークロードに対するパフォーマンスが高いネットワーキングソリューション
+        - NATインスタンスをNATゲートウェイに変更する
+    - ワークロードに対するパフォーマンスが高いデータベースソリューション
+        - ElastiCache インメモリによるキーバリューストア型の高性能データベース
+- セキュアなアプリケーションとアーキテクチャの設計
+    - AWSリソースへのセキュアなアクセスの設計
+        - パブリックサブネットでNATゲートウェイを構成する
+        - インターネットトラフィック用のNATゲートウェイへのルートが有るカスタムルートテーブルを定義し、アプリケーション層のプライベートサブネットに関連付ける
+    - セキュアなアプリケーション階層
+    - 適切なデータセキュリティオプションの選択
+        - SSE-C でサーバー側暗号化
+        - クライアント側の暗号化を使用して、保存時の暗号化を提供する
+- コスト最適化アーキテクチャの設計
+    - コスト効率が高いストレージソリューション
+    - コスト効率が高いコンピューティング
+
+- AWSを利用するためのツール
+    - マネジメントコンソール
+    - SSH
+        - TeraTermやPutty
+    - CLI
+        - コマンドラインから
+
+- マネジメントコンソール
+- 多要素認証を有効化
+- IAMダッシュボード
+    - IAM ユーザーの作成
+    - ユーザーグループの作成
+
+- AWS CloudTrail
+    - CloudTrailのログファイルの保存先となるS3バケットを設定する
+    - CloudTrailはGB当たりで課金
+    - 継続的にログ記錄
+    - 証跡の作成
+        - 証跡属性の選択
+        - 証跡名
+        - レイク
+- S3バケットの削除
+- 請求アラームの設定
+- AWS CloudWatch
+    - メトリクス
+
+- AWSの仕組み
+    - インフラ／システム機能をブロックパーツのようにオンライン上に組合わせて自分の好きな構成を実現する仕組み
+        - ELB(ロードバランサー)
+        - EC2(サーバー)
+        - RDS(データベース)
+        - Rout53(DNS)
+        - S3(ストレージ)
+- コンピューティング
+    - アプリケーションを構築する際に利用するサーバーなどのコンピューティングを提供するサービス
+        - Amazon EC2
+        - ELB
+        - Auto Scaling
+        - AWS Lambda
+        - Amazon Lightsail
+        - AWS Fargate
+    - 操作ツール
+        - AWSマネジメントコンソール
+        - AWS CLI
+        - AWS CloudShell
+        - EC2 Instance Connect
+        - AWS Copilot
+- ストレージ
+    - データ保存やデータ処理に利用する多様なストレージが用意されている。
+        - Amazon Simple Storage Service (S3)
+        - Amazon Elastic Block Store (EBS)
+        - インスタンスストア
+        - Amazon Elastic File System (EFS)
+        - Amazon S3 Glacier
+        - Amazon FSx
+        - AWS Storage Gateway
+- データベース(リレーショナル)
+    - AWSでは様々なタイプのデータベースがマネージド型サービスで提供されている
+        - Amazon RDS
+        - Amazon Aurora
+        - Amazon Redshift
+        - Amazon RDS Custom
+        - Amazon RDS on Outposts
+- データベース(NoSQL)
+    - 同上
+        - Amazon DynamoDB
+        - Amazon ElastiCache
+        - Amazon DocumentDB
+        - Amazon Keyspaces
+        - Amazon Neptune
+        - Amazon Timestream(時系列DB)
+- データベース(サーチ/分散台帳)
+    - 同上
+        - Amazon QLDB
+        - Amazon OpenSearch Service
+        - Amazon CloudSearch
+- ネットワーキングとコンテンツ配信
+    - ネットワーク構成やコンテンツ配信・AWS環境への接続設定に利用する多様なサービスが提供される。
+        - Amazon VPC
+        - Amazon Route 53
+        - Amazon CloudFront
+        - AWS Global Accelerator
+        - AWS Direct Connect
+        - AWS Client VPN
+        - AWSサイト間VPN
+        - AWS Cloud WAN
+        - AWS Transit Gateway
+        - AWS PrivateLink
+- アイデンティティ（ユーザー管理）
+    - AWSのユーザー管理や認証管理に利用されるサービス
+        - AWS Identity & Access Management (IAM)
+        - AWS Organizations
+        - AWS Directory Service
+        - AWS Single Sign On
+        - Amazon Cognito
+        - AWS Security Token Service
+        - AWS Secrets Manager
+- セキュリティ・コンプライアンス
+    - AWSリソースに対するセキュリティやコンプライアンスに寄与するサービス
+        - AWS WAF
+        - AWS Shield
+        - AWS Network Firewall
+        - AWS Firewall Manager
+        - AWS Security Hub
+        - AWS Key Management Service (KMS)
+        - AWS Certificate Manager
+        - AWS CloudHSM
+        - Amazon GuardDuty
+        - Amazon Inspector
+        - Amazon Macie
+        - Amazon Detective
+        - AWS Control Tower
+        - AWS Service Catalog
+        - AWS License Manager
+        - AWS Audit Manager
+- マネジメントとガバナンス
+    - 運用保守やサポートに関する支援ツールやサービス
+        - Amazon CloudWatch
+        - AWS CloudTrail
+        - AWS Systems Manager
+        - AWS Config
+        - AWS Personal Health Dashboard
+        - AWS X-Ray
+        - CloudWatch Real-User Monitoring (RUM)
+        - CloudWatch Application Insights
+        - CloudWatch ServiceLens
+        - AWS Well-Architected Tool
+        - AWS Trusted Advisor
+        - AWS Resource Groups
+        - Tag Editor
+        - AWS Resource Access Manager (RAM)
+        - AWSサポート
+        - AWS TAM (Technical Account Manager)
+        - コンシェルジュサポートチーム
+        - AWSパートナーネットワーク
+        - AWSコンサルティングパートナー
+        - AWSパートナーパス
+        - AWSプロフェッショナルサービス
+        - AWS IQ
+        - AWS Managed Services
+        - AWS re:Post
+        - AWSナレッジセンター
+        - AWSフォーラム
+        - AWSホワイトペーパー
+        - AWSドキュメント
+        - AWSクイックスタート
+        - Service Quotas
+        - AWS Artifact
+        - Amazon Mechanical Turk
+- AWSコスト管理
+    - AWSを利用する際のコスト最適化を支援するツールやサービス
+        - AWS Pricing Calculator
+        - AWS Cost Explorer
+        - AWSのコストと使用状況レポート
+        - AWS Budgets
+        - AWS Compute Optimizer
+        - AWS Cost Anomaly Detection
+- 移行と移転
+    - AWSクラウドへのインフラ移行やデータ移行を支援するサービス
+        - AWS Application Discovery Service
+        - AWS Schema Conversion Tool
+        - AWS Database Migration Service
+        - VM Import/Export
+        - CloudEndure
+        - AWS Migration Hub
+        - AWS Snow Family
+        - AWS DataSync
+        - AWS Transfer Family
+        - AWS Outposts
+        - AWS Snowball
+        - Snowball Edge Storage Optimized
+        - Snowball Edge Compute Optimized
+        - AWS Snowmobile
+        - AWS Snowcone
+        - AWS OpsHub
+        - CloudEndure Disaster Recovery
+        - AWS Elastic Disaster Recovery (AWS DRS)
+- アプリケーション統合
+    - アプリケーションやコンポーネント間の連携や通知に利用するサービス
+        - Amazon SNS
+        - Amazon SQS
+        - Amazon SES
+        - Amazon MQ
+        - Amazon API Gateway
+- データ活用
+    - データ処理やデータ解析に利用されるサービス
+        - Amazon Kinesis
+        - Amazon Athena
+        - Amazon EMR
+        - AWS Glue
+        - Amazon QuickSight
+        - AWS Lake Formation
+        - AWS Data Exchange
+- 開発支援サービス
+    - AWS上でのアプリケーション開発を支援するサービス
+        - AWS CloudFormation
+        - AWS Elastic BeanStalk
+        - AWS OpsWorks
+        - AWS Serverless Application Model
+        - AWS Launch Wizard
+        - AWS Cloud Development Kit (AWS CDK)
+        - AWS Cloud9
+        - AWS CodeBuild
+        - AWS CodeCommit
+        - AWS CodeDeploy
+        - AWS CodePipeline
+        - AWS CodeStar
+- 開発支援サービス（Docker環境自動化）
+    - AWS上でのアプリケーション開発を支援するサービス
+        - Amazon ECS
+        - Amazon EKS
+        - Amazon ECR
+        - AWS Fargate
+        - ECS / EKS Anywhere
+
+---
+
+- 仮想化の対象
+    - 次のようなインフラを仮想化することができる
+        - サーバーの仮想化
+        - ストレージの仮想化
+        - ネットワークの仮想化
+        - デスクトップの仮想化
+
+- クラウド構成要素
+    - インフラ
+        - サーバー機器
+        - クライアント端末
+        - ネットワーク機器
+    - ミドルウェア
+        - Web/アプリケーションサーバー
+    - アプリケーション
+        - 業務パッケージソフト
+
+- クラウドの5つの基本特性
+    - クラウドの特徴は「5つの基本特性」「3つのサービス」「3つの提供形態」
+
+- クラウドの3つのサービス形態
+    - 主にSaaS、PaaS、IaaSの3つのサービスが存在
+        - IaaS ... インフラ
+        - PaaS ... ミドルウェア
+        - SaaS ... アプリケーション
+
+- クラウドの3つの提供形態
+    - プライベート
+        - クラウド環境を丸抱えする
+        - 大企業向け
+    - パブリック
+    - ハイブリッド
+
+- クラウドへの進化
+    - クラウドから超分散コンピューティング型のクラウドへと発展
+
+- クラウドファーストの時代へ
+    - クラウドを中核に「ネットとリアルの融合」「ITとビジネスの融合」が促進される
+    - 「テクノロジーの進化」と「ビジネス変化のスピード」に対応するため、柔軟で素早いシステム開発が求められる
+    - 今後のテクノロジー×ビジネスに柔軟に対応するためには、クラウドファーストが必要不可欠
+
+- AWSのグローバルインフラ構成
+    - リージョン
+        - 地理的に隔離された世界中の物理的ロケーション
+        - 日本には東京と大阪
+        - 災害のため物理的な独立性
+        - 中国国内のリージョンは政治的理由で断絶
+        - リージョンに応じて利用可否と値段
+    - アべイラビリティゾーン（AZ）
+        - 1つ以上のデータセンターで構成された論理的なデータセンターのグループ
+        - 複数AZで分けて信頼性の高いシステム構成にするのが基本的なAWSアーキテクチャとなる
+        - 複数AZを跨ぐと物理的な耐久性などが向上するが、システム間の連携や共有が制限される
+        - データやシステムに係る法律や社内規定を考慮し、基本的には自身の身近なリージョンを選択してAWSシステムを構築する
+        - 事業継続性計画（BCP）などの対策のためデータや予備システムとして別リージョンを利用する
+    - エッジロケーション
+        - グローバルにコンテンツ配信に利用されるロケーションのこと
+    - AWSローカルゾーン
+        - レイテンシーの影響を受けやすいアプリケーションをエンドユーザーにより近い場所で実行するためのロケーション
+        - リージョンから離れたユーザーに近い場所にサービスを提供するロケーションのこと。
+    - Wavelength Zone
+        - 5Gネットワークを利用した高速アプリケーションを開発できるロケーションのこと
+
+- AWSの意義
+    - 圧倒的トップ
+    - トップシェア
+    - 圧倒的投資額
+        - 全てのIT従事者にAWSスキルは必須
+- IAM
+    - Identity and Access Management
+        - AWS利用者認証の実施
+        - アクセスポリシーの設定
+        - 個人またはグループに設定
+    - AWS操作を実施するための認証、認可の仕組み
+    - ユーザー
+        - 管理者権限
+            - IAMユーザー
+        - パワーユーザー
+            - IAMユーザー
+        - ルートアカウント はIAMユーザーではない
+            - ルートユーザーのみの実施権限がある
+    - グループ
+    - ポリシー
+        - JSON形式で設定される
+        - 管理ポリシー
+            - AWS管理ポリシー
+            - カスタマー管理ポリシー
+        - インラインポリシー
+    - ロール
+
+- アクセス許可の境界
+    - Session policy
+    - Permissions boundary
+    - Identity-based policy
+
+- ユーザーのアクティビティの記録
+
+- IAM権限のベストプラクティス
+    - AWS アカウントのルートユーザーのアクセスキーをロックして通常はルートアカウントを使用しない。
+    - 個々の IAM ユーザーを作成して、IAMユーザーで管理を行う。
+    - IAMユーザーへのアクセス許可を割り当てにIAMグループを利用する。
+    - IAMユーザーやIAMグループには最小権限のみを設定する。
+    - 新しくポリシーを作るのではなく、AWS管理ポリシーを使用する。
+    - インラインポリシーではなくカスタマー管理ポリシーを使用する。
+    - アクセスレベルを使用して、IAM アクセス許可を確認する
+    - ユーザーのために強度の高いパスワードポリシーを設定する。
+    - MFA を有効化する。
+    - Amazon EC2 インスタンスで実行するアプリケーションにはIAMロールを使用する
+    - 第三者に一時的に認証を付与する場合はIAMロールを使用してアクセス許可を移譲する
+    - アクセスキーを共有しない
+    - 認証情報を定期的にローテーションする。
+    - 不要な認証情報の削除する。
+    - AWS アカウントのアクティビティを監視する。
+- IAM設計
+    - 個人
+    - グループ
+- IAMポリシー
+    - 自社組織に必要な権限を設計する
+    - 自分で独自のポリシーを作成する
+    - グループを作成しポリシーを適用する
+- IAMグループへのポリシー適用の手順
+    - IT管理者
+        - フルアクセスの管理者権限の付与（MFAが必須）
+        - 管理ポリシー Administrator
+    - 運用管理者
+        - 運用ツール全般と開発環境へのアクセスも付与して、DevOpsに参加できるようにする
+            - ELB／EC2／RDB／S3／Auto-Scaling ／VPC
+            - Config／Trail／CloudWatch
+    - アプリ開発者
+        - 担当しているアプリの開発範囲でのみアクセス権限を付与する
+            - ELB／EC2／RDB／S3／Auto-Scaling／VP
+- IAMロールへのポリシー適用
+    - ロールを設計する
+    - ロール向けのポリシーを作成する
+    - ロールを作成しポリシーを適用する
+
+- AWS Organizations
+
+- EC2インスタンスの起動時の設定やアクション操作によってIAMロールをアタッチする
+- ルートアカウントは管理者権限
+- パワーユーザーはIAMユーザーやグループの管理以外の全てのAWSサービスへのフルアクセス権限を有している
+- Access AdvisorのLast Accessed DataにIAMエンティティ(ユーザー、グループ、ロール) が最後にAWSサービスにアクセスした日付と時刻が表示される
+- IAMポリシーはJSONで記述
+
+- CIDR（Classless Inter-Domain Routing）
+
+- インターネット経路を設定
+    - ルートテーブルでパケットの行き先を設定
+    - VPC作成時にデフォルトで１つルートテーブルを作成
+    - VPC内はCIDRアドレスでルーティング
+
+- VPC設計ポイント
+    - 設計時には将来の拡張も見据えたアドレッシングや 他ネットワークとの接続性も考慮する
+    - CIDR(IPアドレス)は既存のVPC、社内のDCやオフィスと被らないアドレス帯を設定し、組織構成やシステム構成の将来像も考えながら前もって計画する
+    - VPC構成は自社業務に合せたVPC単体ではなくVPC全体の関係性も視野に入れる
+    - 組織とシステム境界からVPCをどのように分割するか将来構成も考慮して検討する
+    - 複数AZを利用して可用性の高いシステムを構築
+    - サブネットは大きいサブネットを使い、パブリック/プライベートサブネットへのリソースの配置をインターネットアクセス可否から検討する
+    - セキュリティグループを使ってリソース間のトラフィックを適切に制御する
+    - 実装や運用を補助するツールも有効利用し、VPC Flow Logsを使ってモニタリングできるようにする
+
+- パブリックサブネット
+    - インターネットゲートウェイ
+        - インターネットとやりとりするルートテーブル
+- プライベートサブネット
+    - DHCPサーバー
+
+- 参考記事
+    - [AWS認定ソリューションアーキテクト（SAA）合格に必要な知識 - Qiita](https://qiita.com/Potof_/items/85c2977f1532ce1b7516)
+    - [【AWS】AWS 認定ソリューションアーキテクト – アソシエイト(SAA)の出題分野とキーワードを解説する - Qiita](https://qiita.com/Shoma0210/items/21da442748ef1dc8ed3e)
+    - [【AWS】AWS認定ソリューションアーキテクト AWS Certified Solutions Architect - Associate (SAA-C02) 合格体験記 - Qiita](https://qiita.com/Shoma0210/items/9f2e5431536742e80a9f)
+
