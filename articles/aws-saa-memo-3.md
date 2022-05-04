@@ -68,4 +68,8 @@ published: true # 公開設定（falseにすると下書き）
 10. D  A: – スポットインスタンスは最もコストが低くて済むオプションですが、中断できないジョブや一定期間内に完了しなければならないジョブには適していません。オンデマンド インスタンスは、実行する秒数に応じて課金されます。
 [料金 - Amazon EC2 スポットインスタンス - Amazon EC2 | AWS](https://aws.amazon.com/jp/ec2/spot/pricing/)
 
-
+- [IOPS、スループット、レイテンシについて - Qiita](https://qiita.com/MAKOTO1995/items/21c9be9b7bc39fb4a702)
+- [ファイル共有システムに出てくる用語（SAN,NAS,iSCSI,NFS,SMB,CIFSなど） - Qiita](https://qiita.com/zero_046/items/b596646695178316c6d6)
+- [AWSの各サービスを雑に紹介する - Qiita](https://qiita.com/n-i-e/items/63f3f0ccb077bf8dc2f9)
+- [AWSのSQSとSNSの違い - Qiita](https://qiita.com/miyuki_samitani/items/8d38c4421149d7469053)
+- 
