@@ -6,7 +6,7 @@ topics: ["初心者", "SAA"] # タグ。["markdown", "rust", "aws"]のように�
 published: true # 公開設定（falseにすると下書き）
 ---
 
-[【2022年版】これだけでOK！ AWS 認定ソリューションアーキテクト – アソシエイト試験突破講座](https://www.udemy.com/course/aws-associate/)
+## [【2022年版】これだけでOK！ AWS 認定ソリューションアーキテクト – アソシエイト試験突破講座](https://www.udemy.com/course/aws-associate/)
 
 - Well Architected Framework
     - Well-Architected Framework ホワイトペーパー
@@ -42,7 +42,7 @@ published: true # 公開設定（falseにすると下書き）
 2. C  D: ロングポーリングでは、ReceiveMessage 要求に応答を送信する前に、メッセージが利用可能になるまで Amazon SQS の待機を許可することにより空の応答数を減少させることができます。
 [SQS基礎まとめ](https://zenn.dev/hi_ka_ru/articles/a516af8bfc4457)
 3. B
-4. A, B
+4. A, B: [AWS初心者-AWSネットワーク関連用語を基礎からおさらい｜コラム｜NURO Biz（ニューロ・ビズ）](https://biz.nuro.jp/column/aws-mama-031/)
 5. B  C: インスタンスを休止状態にすると、RAM の内容が Amazon EBS ルートボリュームに保存されます。インスタンスが再起動すると、RAM の内容が再読み込みされます。
 [Windows EC2インスタンスのハイバネーション(休止)を試してみた | DevelopersIO](https://dev.classmethod.jp/articles/ec2-windows-support-hibernation/)
 6. C  D: セカンダリ ENI をインスタンスに追加できます。プライマリ ENI をインスタンスからデタッチすることはできませんが、セカンダリ ENI をデタッチして別のインスタンスにアタッチすることはできます。
@@ -69,3 +69,13 @@ published: true # 公開設定（falseにすると下書き）
 - [ファイル共有システムに出てくる用語（SAN,NAS,iSCSI,NFS,SMB,CIFSなど） - Qiita](https://qiita.com/zero_046/items/b596646695178316c6d6)
 - [AWSの各サービスを雑に紹介する - Qiita](https://qiita.com/n-i-e/items/63f3f0ccb077bf8dc2f9)
 - [AWSのSQSとSNSの違い - Qiita](https://qiita.com/miyuki_samitani/items/8d38c4421149d7469053)
+- [[初心者向け]Route53のトラフィックルーティングを実装する | DevelopersIO](https://dev.classmethod.jp/articles/implement-route53-routing-for-begineer/)
+- [[初心者] EMRとは何ですか/とりあえずざっとまとめてチュートリアルしてみる | DevelopersIO](https://dev.classmethod.jp/articles/beginner-what-is-emr-overview/)
+- [コンテナサービス「Amazon EKS」とは？実際に使用してみた｜コラム｜クラウドソリューション｜サービス｜法人のお客さま｜NTT東日本](https://business.ntt-east.co.jp/content/cloudsolution/column-try-40.html)
+- [STSで一時クレデンシャルを発行する | DevelopersIO](https://dev.classmethod.jp/articles/sts-temporality-credential/)
+- [初学者のためのAWS入門(3)-CloudFormation入門2 - Qiita](https://qiita.com/mshinoda88/items/65e7e145c7ec943af403#awsec2networkacl)
+    - Egress 
+        - サブネットからの送信トラフィックに適用される: true
+        - サブネットへの受信トラフィックに適用される: false
+        - 初期値は false 
+- [AWS再入門ブログリレー2022 Amazon ECR編 | DevelopersIO](https://dev.classmethod.jp/articles/re-introduction-2022-ecr/)
