@@ -55,13 +55,23 @@ published: true # 公開設定（falseにすると下書き）
 
 ## メモ
 - [プロビジョニングとは | クラウド・データセンター用語集／IDCフロンティア](https://www.idcf.jp/words/provisioning.html)
+- [AWS: プロビジョニングサービス - Qiita](https://qiita.com/kakkie/items/6fb3ff85ae34bd965ffb)
+    - Elastic Beanstalk
+        - 定番構成の自動構築
+    - OpsWorks
+        - Chef環境を提供し、OSより上のレイヤーの自動構築をサポート
+    - CloudFormation
+        - JSONあるいは、YAMLのテンプレートを作成し、OSより下のレイヤーの自動構築をサポート
 - [【AWS資格】無料WEB問題集＆徹底解説 | ソリューションアーキテクト(SAA)](https://aws-exam.net/saa/saa_q_list.php?q_list=1)
 - [AWS サービスがどこにあるのかまとめ - Qiita](https://qiita.com/saitotak/items/d2ede050e7a2224da46d)
 - [AWS再入門ブログリレー Amazon SQS編 | DevelopersIO](https://dev.classmethod.jp/articles/re-introduction-2020-amazon-sqs/)
+- [AWS再入門ブログリレー2022 Amazon ECR編 | DevelopersIO](https://dev.classmethod.jp/articles/re-introduction-2022-ecr/)
 - [AWS OpsWorks（Chef や Puppet を使って運用を自動化する）| AWS](https://aws.amazon.com/jp/opsworks/)
 - [CloudWatch 標準メトリクス(監視項目) 一覧 - Qiita](https://qiita.com/gohatk@github/items/d1cfcbd1a3c1f7e6b4d3)
+- [CloudWatchの標準メトリクスでEC2インスタンスのメモリ使用率はなぜ取得できないのか - Qiita](https://qiita.com/mittsukan/items/5185a119f9a22a0c88ff)
 - [Amazon Route 53（スケーラブルなドメインネームシステム (DNS)）| AWS](https://aws.amazon.com/jp/route53/)
 - [インスタンスストアと EBS の違いを教えてください。](https://aws.amazon.com/jp/premiumsupport/knowledge-center/instance-store-vs-ebs/)
+- [EBS最適化インスタンスの効果を知るべくベンチマークを取ってみた | DevelopersIO](https://dev.classmethod.jp/articles/ebs-optimization-benchmark/)
 - [Design for Failureの思想に見る、システム障害との向き合い方 | DATA INSIGHT | NTTデータ](https://www.nttdata.com/jp/ja/data-insight/2012/090601/)
 - [EC2 拡張ネットワーキングとプレイスメントグループの効果を試す | DevelopersIO](https://dev.classmethod.jp/articles/ec2-placement-group/)
 - [AWSとは？自社でクラウドを本格導入する時に困らない為の初心者向け早わかりガイド｜サービス｜法人のお客さま｜NTT東日本](https://business.ntt-east.co.jp/content/cloudsolution/column-259.html#section-05-01)
@@ -69,6 +79,7 @@ published: true # 公開設定（falseにすると下書き）
 - [ファイル共有システムに出てくる用語（SAN,NAS,iSCSI,NFS,SMB,CIFSなど） - Qiita](https://qiita.com/zero_046/items/b596646695178316c6d6)
 - [AWSの各サービスを雑に紹介する - Qiita](https://qiita.com/n-i-e/items/63f3f0ccb077bf8dc2f9)
 - [AWSのSQSとSNSの違い - Qiita](https://qiita.com/miyuki_samitani/items/8d38c4421149d7469053)
+- [Amazon S3 Transfer Acceleration を使用した高速かつ安全なファイル転送の設定 - Amazon Simple Storage Service](https://docs.aws.amazon.com/ja_jp/AmazonS3/latest/userguide/transfer-acceleration.html)
 - [[初心者向け]Route53のトラフィックルーティングを実装する | DevelopersIO](https://dev.classmethod.jp/articles/implement-route53-routing-for-begineer/)
 - [[初心者] EMRとは何ですか/とりあえずざっとまとめてチュートリアルしてみる | DevelopersIO](https://dev.classmethod.jp/articles/beginner-what-is-emr-overview/)
 - [コンテナサービス「Amazon EKS」とは？実際に使用してみた｜コラム｜クラウドソリューション｜サービス｜法人のお客さま｜NTT東日本](https://business.ntt-east.co.jp/content/cloudsolution/column-try-40.html)
@@ -78,4 +89,3 @@ published: true # 公開設定（falseにすると下書き）
         - サブネットからの送信トラフィックに適用される: true
         - サブネットへの受信トラフィックに適用される: false
         - 初期値は false 
-- [AWS再入門ブログリレー2022 Amazon ECR編 | DevelopersIO](https://dev.classmethod.jp/articles/re-introduction-2022-ecr/)
