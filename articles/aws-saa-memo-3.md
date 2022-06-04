@@ -54,6 +54,8 @@ published: true # 公開設定（falseにすると下書き）
 [料金 - Amazon EC2 スポットインスタンス - Amazon EC2 | AWS](https://aws.amazon.com/jp/ec2/spot/pricing/)
 
 ## メモ
+- [【AWS資格】無料WEB問題集＆徹底解説 | ソリューションアーキテクト(SAA)](https://aws-exam.net/saa/saa_q_list.php?q_list=1)
+- [AWS サービスがどこにあるのかまとめ - Qiita](https://qiita.com/saitotak/items/d2ede050e7a2224da46d)
 - [プロビジョニングとは | クラウド・データセンター用語集／IDCフロンティア](https://www.idcf.jp/words/provisioning.html)
 - [AWS: プロビジョニングサービス - Qiita](https://qiita.com/kakkie/items/6fb3ff85ae34bd965ffb)
     - Elastic Beanstalk
@@ -62,8 +64,6 @@ published: true # 公開設定（falseにすると下書き）
         - Chef環境を提供し、OSより上のレイヤーの自動構築をサポート
     - CloudFormation
         - JSONあるいは、YAMLのテンプレートを作成し、OSより下のレイヤーの自動構築をサポート
-- [【AWS資格】無料WEB問題集＆徹底解説 | ソリューションアーキテクト(SAA)](https://aws-exam.net/saa/saa_q_list.php?q_list=1)
-- [AWS サービスがどこにあるのかまとめ - Qiita](https://qiita.com/saitotak/items/d2ede050e7a2224da46d)
 - [AWS再入門ブログリレー Amazon SQS編 | DevelopersIO](https://dev.classmethod.jp/articles/re-introduction-2020-amazon-sqs/)
 - [AWS再入門ブログリレー2022 Amazon ECR編 | DevelopersIO](https://dev.classmethod.jp/articles/re-introduction-2022-ecr/)
 - [AWS OpsWorks（Chef や Puppet を使って運用を自動化する）| AWS](https://aws.amazon.com/jp/opsworks/)
@@ -89,3 +89,15 @@ published: true # 公開設定（falseにすると下書き）
         - サブネットからの送信トラフィックに適用される: true
         - サブネットへの受信トラフィックに適用される: false
         - 初期値は false 
+- ゲートウェイ
+    - [インターネットゲートウェイを使用してインターネットに接続する - Amazon Virtual Private Cloud](https://docs.aws.amazon.com/ja_jp/vpc/latest/userguide/VPC_Internet_Gateway.html)
+    - [パブリックサブネット vs プライベートサブネット | エクスチュア株式会社ブログ](https://ex-ture.com/blog/2021/07/14/publicsubnet-vs-plivatesubnet/)
+    - [【AWS】NATゲートウェイとは、インターネットゲートウェイとの違い - Qiita](https://qiita.com/mzmz__02/items/2bf48c0645d41bc2fb69)
+    - [2つのVPCエンドポイントの違いを知る | DevelopersIO](https://dev.classmethod.jp/articles/vpc-endpoint-gateway-type/)
+- [AWS Global Accelerator（アプリケーションの可用性とパフォーマンスを向上）| AWS](https://aws.amazon.com/jp/global-accelerator/?blogs-global-accelerator.sort-by=item.additionalFields.createdDate&blogs-global-accelerator.sort-order=desc&aws-global-accelerator-wn.sort-by=item.additionalFields.postDateTime&aws-global-accelerator-wn.sort-order=desc)
+- [Amazon Lex（Alexaと同じテクノロジーを利用した会話型インターフェイス）| AWS](https://aws.amazon.com/jp/lex/)
+- [Amazon SageMaker（機械学習モデルを大規模に構築、トレーニング、デプロイ）| AWS](https://aws.amazon.com/jp/sagemaker/)
+- [AWS Snowmobile (エクサバイト規模のデータ転送サービス) | AWS](https://aws.amazon.com/jp/snowmobile/)
+- [AWS Application Discovery Service（オンプレミスの情報を検出して移行を効率化）| AWS](https://aws.amazon.com/jp/application-discovery/)
+- [Amazon QuickSight（あらゆるデバイスからアクセス可能な高速BIサービス）| AWS](https://aws.amazon.com/jp/quicksight/)
+- [よくある質問 - Amazon Simple Workflow Service（SWF） | AWS](https://aws.amazon.com/jp/swf/faqs/)
