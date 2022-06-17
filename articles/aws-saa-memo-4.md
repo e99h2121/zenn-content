@@ -13,6 +13,7 @@ published: true # 公開設定（falseにすると下書き）
     - Savings Plans
     - Dedicated Hosts
         - お客様専用の物理 EC2 サーバー
+
 ## CloudWatch, CloudTrail
 
 - [Amazon CloudWatch Logs とは - Amazon CloudWatch Logs](https://docs.aws.amazon.com/ja_jp/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html)
@@ -53,6 +54,7 @@ published: true # 公開設定（falseにすると下書き）
 	- [Amazon CloudFront（グローバルなコンテンツ配信ネットワーク）| AWS](https://aws.amazon.com/jp/cloudfront/)
 - ElastiCache
 	- [Amazon ElastiCache（インメモリキャッシングシステム）| AWS](https://aws.amazon.com/jp/elasticache/)
+	- ユーザー行動データの高速な処理には最適なDBであり、行動データ記録に応じたリアルタイムのランキング処理やアイテム出現などを実現
 	- Radis用ElastiCache
 		- シングルスレッドで排他的
 	- Memcachd用ElastiCache
@@ -69,6 +71,7 @@ published: true # 公開設定（falseにすると下書き）
 		- デフォルトは結果整合性モデルだが、オプション機能で強い整合性モデルも利用
 		- 利用負荷があらかじめ予測できる場合はプロビジョンドスループット
 		- [Amazon DynamoDB Cross-region Replicationを試してみた | DevelopersIO](https://dev.classmethod.jp/articles/dynamodb-crossregion-replication/)
+		- DynamoDB Accelerator(DAX) を有効化することで、DynamoDBテーブルはミリセカンドからマイクロセカンドへの最大 10 倍のパフォーマンス向上
 		- DynamoDB Streamsは24時間
 		- RCU/WCU
 		- 結果整合性
@@ -96,6 +99,12 @@ published: true # 公開設定（falseにすると下書き）
     - レイテンシールーティングポリシー
     - 複数値回答ルーティングポリシー
     - 加重ルーティングポリシー 
+- [AWS Global Accelerator（アプリケーションの可用性とパフォーマンスを向上）| AWS](https://aws.amazon.com/jp/global-accelerator/)
+
+## 接続など
+
+- [AWS VPN（オンプレミスネットワークへどこからでも安全に接続）| AWS](https://aws.amazon.com/jp/vpn/)
+- [AWS Direct Connect（AWS への専用ネットワーク接続）| AWS](https://aws.amazon.com/jp/directconnect/)
 
 ## マイグレーションなど
 
@@ -106,13 +115,37 @@ published: true # 公開設定（falseにすると下書き）
 - [AWS DataSync（シンプルかつ高速なオンラインデータ転送）| AWS](https://aws.amazon.com/jp/datasync/)
 
 
+## プロビジョニングなど
+
+- [AWS CloudFormation（テンプレートを使ったリソースのモデル化と管理）| AWS](https://aws.amazon.com/jp/cloudformation/)
+- [AWS Elastic Beanstalk（ウェブアプリの実行と管理）| AWS](https://aws.amazon.com/jp/elasticbeanstalk/)
+- [AWS OpsWorks（Chef や Puppet を使って運用を自動化する）| AWS](https://aws.amazon.com/jp/opsworks/)
+- [AWS CodePipeline（継続的デリバリーを使用したソフトウェアのリリース）| AWS](https://aws.amazon.com/jp/codepipeline/)
+
 ## コンテナなど
 
 - [Amazon ECR（Docker イメージの保存と取得）| AWS](https://aws.amazon.com/jp/ecr/)
 - [Amazon ECS（Docker コンテナを実行および管理）| AWS](https://aws.amazon.com/jp/ecs/)
 - [Amazon EKS（AWS でマネージド Kubernetes を実行）| AWS](https://aws.amazon.com/jp/eks/)
 
+## 通知
+
+- [Amazon SNS（サーバーレスアプリのための pub/sub メッセージングサービス）| AWS](https://aws.amazon.com/jp/sns/)
+- [Amazon MQ（ActiveMQ 向けマネージド型メッセージブローカーサービス）| AWS](https://aws.amazon.com/jp/amazon-mq/?amazon-mq.sort-by=item.additionalFields.postDateTime&amazon-mq.sort-order=desc)
+
+## 暗号化
+
+- [AWS Key Management Service（マネージド型の暗号化キー作成と管理）| AWS](https://aws.amazon.com/jp/kms/)
+
+## SSL/TLS 証明書
+
+- [AWS Certificate Manager（SSL/TLS 証明書のプロビジョン、管理、およびデプロイ）| AWS](https://aws.amazon.com/jp/certificate-manager/)
+
 ## その他
 
 - データの移動や変換を簡単に自動化: [AWS Data Pipeline（データの移動や変換を簡単に自動化）| AWS](https://aws.amazon.com/jp/datapipeline/)
 - 動画とデータストリームをリアルタイムで容易に収集、処理、分析: [Amazon Kinesis（ストリーミングデータをリアルタイムで収集、処理、分析）| AWS](https://aws.amazon.com/jp/kinesis/)
+    - [Amazon Kinesis Data Streams（リアルタイム分析向け大規模データを収集）| AWS](https://aws.amazon.com/jp/kinesis/data-streams/)
+    - [Amazon Kinesis Data Firehose（ストリーミングデータをデータストアや分析ツールにロード）| AWS](https://aws.amazon.com/jp/kinesis/data-firehose/)
+    - [Amazon Kinesis Data Analytics（ストリーミングデータをリアルタイムで処理）| AWS](https://aws.amazon.com/jp/kinesis/data-analytics/)
+- STS: [IAM の一時的な認証情報 - AWS Identity and Access Management](https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/id_credentials_temp.html)

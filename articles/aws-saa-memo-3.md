@@ -31,6 +31,10 @@ published: true # 公開設定（falseにすると下書き）
     - キャッシュの利用
     - セキュリティの確保
     - 最適なデータベース選択
+    
+## 動画
+
+- [(3682) AWS ソリューションアーキテクト アソシエイト試験 対策動画 - YouTube](https://www.youtube.com/watch?v=fsz6G45A4H4&t=375s)
 
 ## 歴史
 - [Amazon Simple Queue Service (SQS) – 15 年が経過した今もキューを実行中! | Amazon Web Services ブログ](https://aws.amazon.com/jp/blogs/news/amazon-sqs-15-years-and-still-queueing/)
@@ -100,4 +104,7 @@ published: true # 公開設定（falseにすると下書き）
 - [AWS Snowmobile (エクサバイト規模のデータ転送サービス) | AWS](https://aws.amazon.com/jp/snowmobile/)
 - [AWS Application Discovery Service（オンプレミスの情報を検出して移行を効率化）| AWS](https://aws.amazon.com/jp/application-discovery/)
 - [Amazon QuickSight（あらゆるデバイスからアクセス可能な高速BIサービス）| AWS](https://aws.amazon.com/jp/quicksight/)
+- [AWS Backup | 一元化されたクラウドバックアップ | アマゾン ウェブ サービス](https://aws.amazon.com/jp/backup/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc)
+- [絵で見て 3分でおさらいする Amazon S3 のバージョニングとライフサイクル | DevelopersIO](https://dev.classmethod.jp/articles/3minutes-s3-versioning-lifecycle/)
+- [Amazon RDS on Outposts | オンプレミスマネージド型データベース | アマゾン ウェブ サービス](https://aws.amazon.com/jp/rds/outposts/)
 - [よくある質問 - Amazon Simple Workflow Service（SWF） | AWS](https://aws.amazon.com/jp/swf/faqs/)
