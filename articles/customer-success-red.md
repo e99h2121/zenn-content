@@ -85,6 +85,7 @@ published: true # 公開設定（falseにすると下書き）
 - 仏作って魂入れずにならないようカスタマーサクセスは特定の部門やチームだけではなく企業全体が実行することで成功するという価値観が組織の全員に心底浸透していることが重要。
     - [カスタマーサクセスとは#2-7｜Nakano Yasuaki｜note](https://note.com/yasu_nakano/n/ncfdd8c620641)
 - テクノロジー「以外」もメルカリの大切なプロダクト価値
+    - メルカリに「カスタマーサクセス」という名の部門は存在しない。それでもこうした優れたプロダクトが開発され価値を上げ続けているのは、カスタマーセントリックな企業文化、即ちカスタマーサクセスは特定の部門だけではなく組織全体が実行することという価値観が浸透しているため
     - メルカリは、テクノロジーだけでなく、配送というリアルな部分もプロダクトとして強化する必要があると考える。
         - なるほどわかる
 - [カスタマーサクセスとは#3-2-3｜Nakano Yasuaki｜note](https://note.com/yasu_nakano/n/na2db1269f6d5)
@@ -96,5 +97,6 @@ https://note.com/akiko_nagahashi/n/n60f9b9eca861
 
 https://note.com/nakamura0107/n/nf44d7e7532b4
 
+次に読むなら: [SaaS時代に必須の本『The Model（ザ・モデル）』とは？](https://eigyou-dx.jp/btobmarketing/the-model-book)
 
 以上です～
