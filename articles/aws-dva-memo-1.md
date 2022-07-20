@@ -21,3 +21,9 @@ published: true # 公開設定（falseにすると下書き）
 - [AWS サーバーレスアプリケーションモデル - アマゾン ウェブ サービス](https://aws.amazon.com/jp/serverless/sam/)
 - [CloudFormation のテンプレート](https://aws.amazon.com/jp/cloudformation/resources/templates/)
 
+
+## 体験記
+
+- [AWS Certified Developer - Associate 合格体験記 | フューチャー技術ブログ](https://future-architect.github.io/articles/20210906a/)
+- [AWS 認定Developer Associate に合格するまで - Qiita](https://qiita.com/yoshiyama_hana/items/8ea41e756036ca098c4b)
+- [AWSにおける開発に入門しよう！ノンデベロッパーの私がAWS Certified Developer Associate認定試験を受けてきた | DevelopersIO](https://dev.classmethod.jp/articles/how-to-become-an-aws-certified-developer-associate/)
