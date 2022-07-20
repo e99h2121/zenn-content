@@ -10,6 +10,7 @@ published: true # 公開設定（falseにすると下書き）
 
 - [DVA | AWS WEB問題集で学習しよう](https://aws.koiwaclub.com/exam/dva/)
 - [AWS 認定デベロッパー アソシエイト模擬試験問題集（5回分325問） | Udemy](https://www.udemy.com/course/aws-31955/)
+- [Ultimate AWS Certified Developer Associate 2022 - NEW! | Udemy](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/)
 
 ## 本
 
