@@ -91,3 +91,48 @@ pub fn run(){
     println!("this is vars module")
 }
 ```
+
+https://github.com/GomaGoma676/rust-lesson
+
+
+## アプリケーションのメモリ
+
+- Heap ... String, Vector
+- Stack ... サイズが決まった変数や配列など
+- Static ... const, 文字列リテラルの実態
+- Text ... コード
+
+
+```
+fn main() {
+    let a = 10;
+    let b = 20;
+    println!("{} {}", a, b)
+}
+```
+
+## Mutable, Immutable
+
+- 型推論
+- [アンダースコア(Rustの基本構文-3-) - Qiita](https://qiita.com/jin237/items/59ef229a4de30cb8203b)
+- シャドーイング: [Rustのシャドーイングについて - やってみる](https://ytyaru.hatenablog.com/entry/2020/08/03/000000)
+
+## 所有権
+
+- 二重解放エラー
+- 文字列スライスはデータを所有しない
+
+## Stack overflow, Vector型
+
+- 所有権・参照・借用
+- ライフタイム (Non-Lexical Lifetime)
+- ダングリングポインタ
+- RAII (Resource Acquisition Is Initialization)
+- Generics
+- Generic lifetime annotation
+- 構造体と列挙型
+- マッチングパターン
+- トレイトとトレイト境界
+- ユニットテスト
+- 外部ライブラリとカスタムライブラリ
+
