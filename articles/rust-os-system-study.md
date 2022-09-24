@@ -124,6 +124,14 @@ fn main() {
 
 ## Stack overflow, Vector型
 
+- スタックは8MB
+
+```
+error: process didn't exit successfully: `target\debug\rust_lesson1.exe` (exit code: 0xc00000fd, STATUS_STACK_OVERFLOW)
+```
+
+## その他
+
 - 所有権・参照・借用
 - ライフタイム (Non-Lexical Lifetime)
 - ダングリングポインタ
@@ -133,6 +141,12 @@ fn main() {
 - 構造体と列挙型
 - マッチングパターン
 - トレイトとトレイト境界
+    - [Rustのtrait(トレイト)について - Qiita](https://qiita.com/ishishow/items/23cd4dd8291145f2db71)
 - ユニットテスト
 - 外部ライブラリとカスタムライブラリ
+    - https://crates.io/
+
+## 参考記事
+
+- [Re:FizzBuzzから始めるRust生活 - Qiita](https://qiita.com/hinastory/items/543ae9749c8bccb9afbc)
 
