@@ -99,7 +99,6 @@ PS /home/nobuko>
 
 ![image.png](/images/ee86d705-a2d8-ce20-2131-16805fdb32da.png)
 
-
 ここまでくればお遊び放題。
 
 
