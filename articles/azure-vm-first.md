@@ -31,6 +31,21 @@ ResourceId        : /subscriptions/64802ffd-86e1-4902-95e3-3741e722
 Location だけ East Asia にしてみた。
 User とパスワードをお好みのものに決める。
 
+
+```powershell
+New-AzVm `
+    -ResourceGroupName 'myResourceGroup' `
+    -Name 'myVM' `
+    -Location 'EastAsia' `
+    -VirtualNetworkName 'myVnet' `
+    -SubnetName 'mySubnet' `
+    -SecurityGroupName 'myNetworkSecurityGroup' `
+    -PublicIpAddressName 'myPublicIpAddress' `
+    -OpenPorts 80,3389
+```
+
+
+
 > Supply values for the following parameters:
 Credential
 User: e99h2121
