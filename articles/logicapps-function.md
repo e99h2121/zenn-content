@@ -67,6 +67,16 @@ or(equals(dayOfWeek(convertFromUtc(utcNow(), 'Tokyo Standard Time')), 6),
         ]
 ```
 
+## 日付
+
+convertFromUtc(utcNow(), 'Tokyo Standard Time', 'yyyyMMddHHmmss')
+ 
+## null だったらダミー値で埋めるとか
+
+`if(empty(outputs('作成')), 'dummy', outputs('作成'))`
+
+
+
 
 ## ほか参考
 
